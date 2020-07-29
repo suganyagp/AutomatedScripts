@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test verbose="5" name="Test" parallel="methods" thread-count="3">
+    <classes>
+      <class name="teazzers.testcases.locations.TEAZ13Location_VerifyGrid"/>
+      <class name="teazzers.testcases.locations.TEAZ21Location_SearchbyPhoneNum"/>
+      <class name="teazzers.testcases.locations.TEAZ18Location_SearchbyServiceTechnician"/>
+      <class name="teazzers.testcases.locations.TEAZ16Location_SearchbyTradeName"/>
+      <class name="teazzers.testcases.locations.TEAZ19Location_SearchbyCityName"/>
+      <class name="teazzers.testcases.locations.TEAZ20Location_SearchbyStateName"/>
+      <class name="teazzers.testcases.locations.TEAZ17Location_SearchbyParentName"/>
+      <class name="teazzers.testcases.locations.TEAZ22Location_SearchbyPrimaryDisturbutor"/>
+      <class name="teazzers.testcases.locations.TEAZ15Location_SearchbyAccNum"/>
+      <class name="teazzers.testcases.locations.TEAZ14Location_SearchbyName"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

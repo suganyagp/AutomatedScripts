@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test verbose="6" name="Test">
+    <classes>
+      <class name="teazzers.testcases.brokers.TEAZ42Brokers_SearchbyChannel"/>
+      <class name="teazzers.testcases.brokers.TEAZ46Brokers_AddLocation"/>
+      <class name="teazzers.testcases.brokers.TEAZ43Brokers_SearchbyFrequency"/>
+      <class name="teazzers.testcases.brokers.TEAZ45Brokers_EditBroker"/>
+      <class name="teazzers.testcases.brokers.TEAZ44Brokers_AddBroker"/>
+      <class name="teazzers.testcases.brokers.TEAZ40Brokers_VerifyGrid"/>
+      <class name="teazzers.testcases.brokers.TEAZ41Brokers_SearchbyName"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

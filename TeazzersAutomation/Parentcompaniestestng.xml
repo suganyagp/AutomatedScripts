@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test verbose="5" name="Test">
+    <classes>
+      <class name="teazzers.testcases.parentcompanies.TEAZ10ParentCompany_AddLocation2Parent"/>
+      <class name="teazzers.testcases.parentcompanies.TEAZ09ParentCompany_EditParentWitDetails"/>
+      <class name="teazzers.testcases.parentcompanies.TEAZ08ParentCompany_AddNewParntWitNoOwner"/>
+      <class name="teazzers.testcases.parentcompanies.TEAZ02ParentCompany_SearchbyName"/>
+      <class name="teazzers.testcases.parentcompanies.TEAZ05ParentCompany_SearchbyCityName"/>
+      <class name="teazzers.testcases.parentcompanies.TEAZ03ParentCompany_SearchbyAccNum"/>
+      <class name="teazzers.testcases.parentcompanies.TEAZ06ParentCompany_SearchbyStateName"/>
+      <class name="teazzers.testcases.parentcompanies.TEAZ04ParentCompany_SearchbyTradeName"/>
+      <class name="teazzers.testcases.parentcompanies.TEAZ01ParentCompany_VerifyGrid"/>
+      <class name="teazzers.testcases.parentcompanies.TEAZ07ParentCompany_SearchbyPhoneNum"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

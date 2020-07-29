@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="teazzers.testcases.service_technicians.TEAZ28ServTech_SearchbyStateName">
+        <methods>
+          <include name="report"/>
+          <include name="setecelfile"/>
+          <include name="startReport"/>
+          <include name="searchStateName" invocation-numbers="0"/>
+          <include name="stopReport"/>
+          <include name="loadObj"/>
+          <include name="beforeMethod"/>
+          <include name="unloadObj"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- teazzers.testcases.service_technicians.TEAZ28ServTech_SearchbyStateName -->
+      <class name="teazzers.testcases.suppliers.TEAZ49Suppliers_SearchbyAccNum">
+        <methods>
+          <include name="report"/>
+          <include name="startReport"/>
+          <include name="stopReport"/>
+          <include name="loadObj"/>
+          <include name="beforeMethod"/>
+          <include name="unloadObj"/>
+          <include name="searchAccNum" invocation-numbers="0"/>
+          <include name="setecelfile"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- teazzers.testcases.suppliers.TEAZ49Suppliers_SearchbyAccNum -->
+      <class name="teazzers.testcases.distributors.TEAZ61_Distributors_SearchbyState">
+        <methods>
+          <include name="report"/>
+          <include name="searchStateName" invocation-numbers="0"/>
+          <include name="startReport"/>
+          <include name="stopReport"/>
+          <include name="loadObj"/>
+          <include name="beforeMethod"/>
+          <include name="unloadObj"/>
+          <include name="setecelfile"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- teazzers.testcases.distributors.TEAZ61_Distributors_SearchbyState -->
+      <class name="teazzers.testcases.distributors.TEAZ62_Distributors_SearchbyPhone">
+        <methods>
+          <include name="setecelfile"/>
+          <include name="report"/>
+          <include name="startReport"/>
+          <include name="stopReport"/>
+          <include name="loadObj"/>
+          <include name="beforeMethod"/>
+          <include name="unloadObj"/>
+          <include name="searchPhoneNum" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- teazzers.testcases.distributors.TEAZ62_Distributors_SearchbyPhone -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

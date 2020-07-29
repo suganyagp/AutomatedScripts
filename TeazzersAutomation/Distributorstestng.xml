@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="teazzers.testcases.distributors.TEAZ33Distributors_SearchbyName"/>
+      <class name="teazzers.testcases.distributors.TEAZ34Distributors_SearchbyVendorNum"/>
+      <class name="teazzers.testcases.distributors.TEAZ38Distributors_EditDistributor"/>
+      <class name="teazzers.testcases.distributors.TEAZ60Distributors_SearchbyCity"/>
+      <class name="teazzers.testcases.distributors.TEAZ61_Distributors_SearchbyState"/>
+      <class name="teazzers.testcases.distributors.TEAZ39Distributors_AddLocations"/>
+      <class name="teazzers.testcases.distributors.TEAZ62_Distributors_SearchbyPhone"/>
+      <class name="teazzers.testcases.distributors.TEAZ36Distributors_SearchbyParentName"/>
+      <class name="teazzers.testcases.distributors.TEAZ32Distributors_VerifyGrid"/>
+      <class name="teazzers.testcases.distributors.TEAZ35Distributors_SearchbyTradeName"/>
+      <class name="teazzers.testcases.distributors.TEAZ37Distributors_AddDistributor"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="106819" started-at="2020-07-29T13:01:51 IST" finished-at="2020-07-29T13:03:38 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="106819" started-at="2020-07-29T13:01:51 IST" finished-at="2020-07-29T13:03:38 IST">
+      <class name="teazzers.testcases.service_technicians.TEAZ26ServTech_SearchbyCityName">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:teazzers.testcases.service_technicians.TEAZ26ServTech_SearchbyCityName@1aeada1]" name="startReport" is-config="true" duration-ms="450" started-at="2020-07-29T13:01:51 IST" finished-at="2020-07-29T13:01:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="loadObj()[pri:0, instance:teazzers.testcases.service_technicians.TEAZ26ServTech_SearchbyCityName@1aeada1]" name="loadObj" is-config="true" duration-ms="0" started-at="2020-07-29T13:01:51 IST" depends-on-methods="teazzers.util.Reporter.startReport" finished-at="2020-07-29T13:01:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadObj -->
+        <test-method status="PASS" signature="setecelfile()[pri:0, instance:teazzers.testcases.service_technicians.TEAZ26ServTech_SearchbyCityName@1aeada1]" name="setecelfile" is-config="true" duration-ms="0" started-at="2020-07-29T13:01:51 IST" finished-at="2020-07-29T13:01:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setecelfile -->
+        <test-method status="PASS" signature="report()[pri:0, instance:teazzers.testcases.service_technicians.TEAZ26ServTech_SearchbyCityName@1aeada1]" name="report" is-config="true" duration-ms="20" started-at="2020-07-29T13:01:51 IST" finished-at="2020-07-29T13:01:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:teazzers.testcases.service_technicians.TEAZ26ServTech_SearchbyCityName@1aeada1]" name="beforeMethod" is-config="true" duration-ms="10025" started-at="2020-07-29T13:01:53 IST" finished-at="2020-07-29T13:02:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="searchCityName(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:teazzers.testcases.service_technicians.TEAZ26ServTech_SearchbyCityName@1aeada1]" name="searchCityName" duration-ms="93382" started-at="2020-07-29T13:02:03 IST" data-provider="getdata" finished-at="2020-07-29T13:03:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://teazzersqa.azurewebsites.net/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TeazzersAdmin@teazzers.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[DEV9@$$w0Rd]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hard Carry]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Just Right]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Physical Address]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[54 Fairway Street]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Palm Coast]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[FL ]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[32137]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchCityName -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:teazzers.testcases.service_technicians.TEAZ26ServTech_SearchbyCityName@1aeada1]" name="afterMethod" is-config="true" duration-ms="1555" started-at="2020-07-29T13:03:37 IST" finished-at="2020-07-29T13:03:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="unloadObj()[pri:0, instance:teazzers.testcases.service_technicians.TEAZ26ServTech_SearchbyCityName@1aeada1]" name="unloadObj" is-config="true" duration-ms="1" started-at="2020-07-29T13:03:39 IST" finished-at="2020-07-29T13:03:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unloadObj -->
+        <test-method status="PASS" signature="stopReport()[pri:0, instance:teazzers.testcases.service_technicians.TEAZ26ServTech_SearchbyCityName@1aeada1]" name="stopReport" is-config="true" duration-ms="1376" started-at="2020-07-29T13:03:39 IST" depends-on-methods="teazzers.api.ProjSpecificMethods.unloadObj" finished-at="2020-07-29T13:03:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopReport -->
+      </class> <!-- teazzers.testcases.service_technicians.TEAZ26ServTech_SearchbyCityName -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

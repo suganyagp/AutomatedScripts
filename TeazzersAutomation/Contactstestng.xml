@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test verbose="5" name="Test">
+    <classes>
+      <class name="teazzers.testcases.contacts.TEAZ56Contacts_SearchbyBusinessPartnr"/>
+      <class name="teazzers.testcases.contacts.TEAZ55Contacts_SearchbyLastName"/>
+      <class name="teazzers.testcases.contacts.TEAZ57Contacts_SearchbyDepartment"/>
+      <class name="teazzers.testcases.contacts.TEAZ53Contacts_VerifyGrid"/>
+      <class name="teazzers.testcases.contacts.TEAZ54Contacts_SearchbyFirstName"/>
+      <class name="teazzers.testcases.contacts.TEAZ58Contacts_SearchbyEmail"/>
+      <class name="teazzers.testcases.contacts.TEAZ59Contacts_SearchbyPhoneNum"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

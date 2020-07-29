@@ -1,0 +1,587 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>56/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jul 29 11:47:04 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>3908 seconds (3908997 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='teazzers.testcases.suppliers.TEAZ49Suppliers_SearchbyAccNum.searchAccNum()'><b>searchAccNum</b><br>Test class: teazzers.testcases.suppliers.TEAZ49Suppliers_SearchbyAccNum<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Billie Jean</td>
+<td><div><pre>java.lang.RuntimeException
+	at teazzers.util.Reporter.reportStep(Reporter.java:65)
+	at teazzers.util.Reporter.reportStep(Reporter.java:75)
+	at teazzers.selenium.api.SeleniumBase.click(SeleniumBase.java:150)
+	at teazzers.pages.Dashboardpage.clickPartners(Dashboardpage.java:32)
+	at teazzers.testcases.suppliers.TEAZ49Suppliers_SearchbyAccNum.searchAccNum(TEAZ49Suppliers_SearchbyAccNum.java:20)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace23667915", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace23667915'><pre>java.lang.RuntimeException
+	at teazzers.util.Reporter.reportStep(Reporter.java:65)
+	at teazzers.util.Reporter.reportStep(Reporter.java:75)
+	at teazzers.selenium.api.SeleniumBase.click(SeleniumBase.java:150)
+	at teazzers.pages.Dashboardpage.clickPartners(Dashboardpage.java:32)
+	at teazzers.testcases.suppliers.TEAZ49Suppliers_SearchbyAccNum.searchAccNum(TEAZ49Suppliers_SearchbyAccNum.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>62</td>
+<td>teazzers.testcases.suppliers.TEAZ49Suppliers_SearchbyAccNum@12d3247</td></tr>
+<tr>
+<td title='teazzers.testcases.distributors.TEAZ62_Distributors_SearchbyPhone.searchPhoneNum()'><b>searchPhoneNum</b><br>Test class: teazzers.testcases.distributors.TEAZ62_Distributors_SearchbyPhone<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, jigeum Thursday, Calling Name, 878-238-5678</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;/Distributors/ViewDistributor/2055&apos;]&quot;}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VG-IT-LAP-14&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\suganyap\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50910}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dc29eff53068fdcb0de9191c6296be49
+*** Element info: {Using=xpath, value=//a[@href=&apos;/Distributors/ViewDistributor/2055&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at teazzers.pages.ManageParentCompaniespage.clickDesireRecDistrib(ManageParentCompaniespage.java:53)
+	at teazzers.testcases.distributors.TEAZ62_Distributors_SearchbyPhone.searchPhoneNum(TEAZ62_Distributors_SearchbyPhone.java:28)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24407268", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace24407268'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;/Distributors/ViewDistributor/2055&apos;]&quot;}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VG-IT-LAP-14&apos;, ip: &apos;192.168.0.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\suganyap\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50910}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: dc29eff53068fdcb0de9191c6296be49
+*** Element info: {Using=xpath, value=//a[@href=&apos;/Distributors/ViewDistributor/2055&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at teazzers.pages.ManageParentCompaniespage.clickDesireRecDistrib(ManageParentCompaniespage.java:53)
+	at teazzers.testcases.distributors.TEAZ62_Distributors_SearchbyPhone.searchPhoneNum(TEAZ62_Distributors_SearchbyPhone.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>92</td>
+<td>teazzers.testcases.distributors.TEAZ62_Distributors_SearchbyPhone@950e31</td></tr>
+<tr>
+<td title='teazzers.testcases.service_technicians.TEAZ28ServTech_SearchbyStateName.searchStateName()'><b>searchStateName</b><br>Test class: teazzers.testcases.service_technicians.TEAZ28ServTech_SearchbyStateName<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, IGOT7, Team Wang, Physical Address, 54 Fairway Street, PLANT CITY, FL, 32137</td>
+<td><div><pre>java.lang.RuntimeException
+	at teazzers.util.Reporter.reportStep(Reporter.java:65)
+	at teazzers.util.Reporter.reportStep(Reporter.java:75)
+	at teazzers.selenium.api.SeleniumBase.click(SeleniumBase.java:152)
+	at teazzers.pages.EditParentCompanypage.clickCreateUnderAddress(EditParentCompanypage.java:172)
+	at teazzers.testcases.service_technicians.TEAZ28ServTech_SearchbyStateName.searchStateName(TEAZ28ServTech_SearchbyStateName.java:27)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace13571750", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace13571750'><pre>java.lang.RuntimeException
+	at teazzers.util.Reporter.reportStep(Reporter.java:65)
+	at teazzers.util.Reporter.reportStep(Reporter.java:75)
+	at teazzers.selenium.api.SeleniumBase.click(SeleniumBase.java:152)
+	at teazzers.pages.EditParentCompanypage.clickCreateUnderAddress(EditParentCompanypage.java:172)
+	at teazzers.testcases.service_technicians.TEAZ28ServTech_SearchbyStateName.searchStateName(TEAZ28ServTech_SearchbyStateName.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>60</td>
+<td>teazzers.testcases.service_technicians.TEAZ28ServTech_SearchbyStateName@e24743</td></tr>
+<tr>
+<td title='teazzers.testcases.distributors.TEAZ61_Distributors_SearchbyState.searchStateName()'><b>searchStateName</b><br>Test class: teazzers.testcases.distributors.TEAZ61_Distributors_SearchbyState<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, IGOT7, Team Wang, Physical Address, 54 Fairway Street, PLANT CITY, FL, 32137</td>
+<td><div><pre>java.lang.AssertionError: States are not matching expected [] but found [FL]
+	at teazzers.pages.EditParentCompanypage.verifyState(EditParentCompanypage.java:136)
+	at teazzers.testcases.distributors.TEAZ61_Distributors_SearchbyState.searchStateName(TEAZ61_Distributors_SearchbyState.java:35)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace17122140", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace17122140'><pre>java.lang.AssertionError: States are not matching expected [] but found [FL]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at teazzers.pages.EditParentCompanypage.verifyState(EditParentCompanypage.java:136)
+	at teazzers.testcases.distributors.TEAZ61_Distributors_SearchbyState.searchStateName(TEAZ61_Distributors_SearchbyState.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>88</td>
+<td>teazzers.testcases.distributors.TEAZ61_Distributors_SearchbyState@a10858</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='teazzers.testcases.brokers.TEAZ44Brokers_AddBroker.AddBroker()'><b>AddBroker</b><br>Test class: teazzers.testcases.brokers.TEAZ44Brokers_AddBroker<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, lullaby, AL, HI, PA</td>
+<td></td>
+<td>56</td>
+<td>teazzers.testcases.brokers.TEAZ44Brokers_AddBroker@9d1c02</td></tr>
+<tr>
+<td title='teazzers.testcases.distributors.TEAZ37Distributors_AddDistributor.AddDistributor()'><b>AddDistributor</b><br>Test class: teazzers.testcases.distributors.TEAZ37Distributors_AddDistributor<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Wang Jiera, Papillon, 9865454356</td>
+<td></td>
+<td>57</td>
+<td>teazzers.testcases.distributors.TEAZ37Distributors_AddDistributor@3fc542</td></tr>
+<tr>
+<td title='teazzers.testcases.brokers.TEAZ46Brokers_AddLocation.AddLocationBroker()'><b>AddLocationBroker</b><br>Test class: teazzers.testcases.brokers.TEAZ46Brokers_AddLocation<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Run Away, Physical Address, 54 Fairway Street, Palm Coast, FL , 32137</td>
+<td></td>
+<td>68</td>
+<td>teazzers.testcases.brokers.TEAZ46Brokers_AddLocation@c8a2c0</td></tr>
+<tr>
+<td title='teazzers.testcases.distributors.TEAZ39Distributors_AddLocations.AddLocationDistributor()'><b>AddLocationDistributor</b><br>Test class: teazzers.testcases.distributors.TEAZ39Distributors_AddLocations<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Itaewon Class, Stone Block, 987-675-1998, Physical Address, 54 Fairway Street, Palm Coast, FL , 32137</td>
+<td></td>
+<td>82</td>
+<td>teazzers.testcases.distributors.TEAZ39Distributors_AddLocations@f6106c</td></tr>
+<tr>
+<td title='teazzers.testcases.service_technicians.TEAZ31ServTechn_AddLocation2ServTech.AddLocationServTechn()'><b>AddLocationServTechn</b><br>Test class: teazzers.testcases.service_technicians.TEAZ31ServTechn_AddLocation2ServTech<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Itaewon Class, Stone Block, 987-675-1998, Physical Address, 54 Fairway Street, Palm Coast, FL , 32137</td>
+<td></td>
+<td>72</td>
+<td>teazzers.testcases.service_technicians.TEAZ31ServTechn_AddLocation2ServTech@5185bd</td></tr>
+<tr>
+<td title='teazzers.testcases.suppliers.TEAZ52Suppliers_AddLocation.AddLocationSupplier()'><b>AddLocationSupplier</b><br>Test class: teazzers.testcases.suppliers.TEAZ52Suppliers_AddLocation<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Run Away, Physical Address, 54 Fairway Street, Palm Coast, FL , 32137</td>
+<td></td>
+<td>72</td>
+<td>teazzers.testcases.suppliers.TEAZ52Suppliers_AddLocation@cd23d9</td></tr>
+<tr>
+<td title='teazzers.testcases.parentcompanies.TEAZ08ParentCompany_AddNewParntWitNoOwner.AddParentCompany()'><b>AddParentCompany</b><br>Test class: teazzers.testcases.parentcompanies.TEAZ08ParentCompany_AddNewParntWitNoOwner<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Wang Jiera, Papillon, 9865454356</td>
+<td></td>
+<td>51</td>
+<td>teazzers.testcases.parentcompanies.TEAZ08ParentCompany_AddNewParntWitNoOwner@1bd930a</td></tr>
+<tr>
+<td title='teazzers.testcases.service_technicians.TEAZ29ServTech_AddServTech.AddServTechn()'><b>AddServTechn</b><br>Test class: teazzers.testcases.service_technicians.TEAZ29ServTech_AddServTech<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Wang Jiera, Papillon, 9865454356</td>
+<td></td>
+<td>83</td>
+<td>teazzers.testcases.service_technicians.TEAZ29ServTech_AddServTech@bd213e</td></tr>
+<tr>
+<td title='teazzers.testcases.suppliers.TEAZ50Suppliers_AddSupplier.AddSupplier()'><b>AddSupplier</b><br>Test class: teazzers.testcases.suppliers.TEAZ50Suppliers_AddSupplier<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Billie Jean</td>
+<td></td>
+<td>51</td>
+<td>teazzers.testcases.suppliers.TEAZ50Suppliers_AddSupplier@c8211c</td></tr>
+<tr>
+<td title='teazzers.testcases.parentcompanies.TEAZ10ParentCompany_AddLocation2Parent.addLocation()'><b>addLocation</b><br>Test class: teazzers.testcases.parentcompanies.TEAZ10ParentCompany_AddLocation2Parent<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Itaewon Class, Stone Block, 987-675-1998, Physical Address, 54 Fairway Street, Palm Coast, FL , 32137</td>
+<td></td>
+<td>60</td>
+<td>teazzers.testcases.parentcompanies.TEAZ10ParentCompany_AddLocation2Parent@190a65e</td></tr>
+<tr>
+<td title='teazzers.testcases.brokers.TEAZ45Brokers_EditBroker.editBroker()'><b>editBroker</b><br>Test class: teazzers.testcases.brokers.TEAZ45Brokers_EditBroker<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Got7 Food Broker, C-store, 876-543-1222, Fendiman, 7-Eleven, 777-777-7777</td>
+<td></td>
+<td>77</td>
+<td>teazzers.testcases.brokers.TEAZ45Brokers_EditBroker@30d1e6</td></tr>
+<tr>
+<td title='teazzers.testcases.distributors.TEAZ38Distributors_EditDistributor.editDistributor()'><b>editDistributor</b><br>Test class: teazzers.testcases.distributors.TEAZ38Distributors_EditDistributor<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Convenience Storr, FoodNShop, 567-678-7777, Danbam Gaho, 123-456-9876</td>
+<td></td>
+<td>85</td>
+<td>teazzers.testcases.distributors.TEAZ38Distributors_EditDistributor@1bbf683</td></tr>
+<tr>
+<td title='teazzers.testcases.parentcompanies.TEAZ09ParentCompany_EditParentWitDetails.editParentCompany()'><b>editParentCompany</b><br>Test class: teazzers.testcases.parentcompanies.TEAZ09ParentCompany_EditParentWitDetails<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Convenience Storr, FoodNShop, 567-678-7777, Danbam Gaho, 123-456-9876</td>
+<td></td>
+<td>69</td>
+<td>teazzers.testcases.parentcompanies.TEAZ09ParentCompany_EditParentWitDetails@91771e</td></tr>
+<tr>
+<td title='teazzers.testcases.service_technicians.TEAZ30ServTech_EditServTechDetails.editServTechn()'><b>editServTechn</b><br>Test class: teazzers.testcases.service_technicians.TEAZ30ServTech_EditServTechDetails<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Convenience Storr, FoodNShop, 567-678-7777, Danbam Gaho, 123-456-9876</td>
+<td></td>
+<td>89</td>
+<td>teazzers.testcases.service_technicians.TEAZ30ServTech_EditServTechDetails@4a2ea6</td></tr>
+<tr>
+<td title='teazzers.testcases.suppliers.TEAZ51Suppliers_EditSupplier.editSupplier()'><b>editSupplier</b><br>Test class: teazzers.testcases.suppliers.TEAZ51Suppliers_EditSupplier<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Billie Jean, Lucifier</td>
+<td></td>
+<td>75</td>
+<td>teazzers.testcases.suppliers.TEAZ51Suppliers_EditSupplier@76c8cd</td></tr>
+<tr>
+<td title='teazzers.testcases.locations.TEAZ14Location_SearchbyName.locSearchName()'><b>locSearchName</b><br>Test class: teazzers.testcases.locations.TEAZ14Location_SearchbyName<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Fortune</td>
+<td></td>
+<td>42</td>
+<td>teazzers.testcases.locations.TEAZ14Location_SearchbyName@607a4f</td></tr>
+<tr>
+<td title='teazzers.testcases.locations.TEAZ15Location_SearchbyAccNum.searchAccNum()'><b>searchAccNum</b><br>Test class: teazzers.testcases.locations.TEAZ15Location_SearchbyAccNum<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, 948</td>
+<td></td>
+<td>37</td>
+<td>teazzers.testcases.locations.TEAZ15Location_SearchbyAccNum@91e32e</td></tr>
+<tr>
+<td title='teazzers.testcases.parentcompanies.TEAZ03ParentCompany_SearchbyAccNum.searchAccNum()'><b>searchAccNum</b><br>Test class: teazzers.testcases.parentcompanies.TEAZ03ParentCompany_SearchbyAccNum<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Sherlock, Shinee</td>
+<td></td>
+<td>45</td>
+<td>teazzers.testcases.parentcompanies.TEAZ03ParentCompany_SearchbyAccNum@718207</td></tr>
+<tr>
+<td title='teazzers.testcases.service_technicians.TEAZ23ServTech_SearchbyAccNum.searchAccNum()'><b>searchAccNum</b><br>Test class: teazzers.testcases.service_technicians.TEAZ23ServTech_SearchbyAccNum<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Sherlock, Shinee</td>
+<td></td>
+<td>57</td>
+<td>teazzers.testcases.service_technicians.TEAZ23ServTech_SearchbyAccNum@1e7803</td></tr>
+<tr>
+<td title='teazzers.testcases.contacts.TEAZ56Contacts_SearchbyBusinessPartnr.searchBusinessPartner()'><b>searchBusinessPartner</b><br>Test class: teazzers.testcases.contacts.TEAZ56Contacts_SearchbyBusinessPartnr<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, LiquiServe</td>
+<td></td>
+<td>33</td>
+<td>teazzers.testcases.contacts.TEAZ56Contacts_SearchbyBusinessPartnr@dba097</td></tr>
+<tr>
+<td title='teazzers.testcases.brokers.TEAZ42Brokers_SearchbyChannel.searchChannel()'><b>searchChannel</b><br>Test class: teazzers.testcases.brokers.TEAZ42Brokers_SearchbyChannel<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Legend Sea, C-store, 672-982-1121</td>
+<td></td>
+<td>58</td>
+<td>teazzers.testcases.brokers.TEAZ42Brokers_SearchbyChannel@9cfc36</td></tr>
+<tr>
+<td title='teazzers.testcases.locations.TEAZ19Location_SearchbyCityName.searchCityName()'><b>searchCityName</b><br>Test class: teazzers.testcases.locations.TEAZ19Location_SearchbyCityName<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Covington</td>
+<td></td>
+<td>41</td>
+<td>teazzers.testcases.locations.TEAZ19Location_SearchbyCityName@1723e30</td></tr>
+<tr>
+<td title='teazzers.testcases.service_technicians.TEAZ26ServTech_SearchbyCityName.searchCityName()'><b>searchCityName</b><br>Test class: teazzers.testcases.service_technicians.TEAZ26ServTech_SearchbyCityName<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Hard Carry, Just Right, Physical Address, 54 Fairway Street, Palm Coast, FL , 32137</td>
+<td></td>
+<td>81</td>
+<td>teazzers.testcases.service_technicians.TEAZ26ServTech_SearchbyCityName@81cdd1</td></tr>
+<tr>
+<td title='teazzers.testcases.distributors.TEAZ60Distributors_SearchbyCity.searchCityName()'><b>searchCityName</b><br>Test class: teazzers.testcases.distributors.TEAZ60Distributors_SearchbyCity<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Hard Carry, Just Right, Physical Address, 54 Fairway Street, Palm Coast, FL , 32137</td>
+<td></td>
+<td>86</td>
+<td>teazzers.testcases.distributors.TEAZ60Distributors_SearchbyCity@74868d</td></tr>
+<tr>
+<td title='teazzers.testcases.parentcompanies.TEAZ05ParentCompany_SearchbyCityName.searchCityName()'><b>searchCityName</b><br>Test class: teazzers.testcases.parentcompanies.TEAZ05ParentCompany_SearchbyCityName<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Hard Carry, Just Right, Physical Address, 54 Fairway Street, Palm Coast, FL , 32137</td>
+<td></td>
+<td>75</td>
+<td>teazzers.testcases.parentcompanies.TEAZ05ParentCompany_SearchbyCityName@e6aa2</td></tr>
+<tr>
+<td title='teazzers.testcases.contacts.TEAZ57Contacts_SearchbyDepartment.searchDepartment()'><b>searchDepartment</b><br>Test class: teazzers.testcases.contacts.TEAZ57Contacts_SearchbyDepartment<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Food Services</td>
+<td></td>
+<td>30</td>
+<td>teazzers.testcases.contacts.TEAZ57Contacts_SearchbyDepartment@3c6f6d</td></tr>
+<tr>
+<td title='teazzers.testcases.contacts.TEAZ58Contacts_SearchbyEmail.searchEmail()'><b>searchEmail</b><br>Test class: teazzers.testcases.contacts.TEAZ58Contacts_SearchbyEmail<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, @bandbfoods.net</td>
+<td></td>
+<td>49</td>
+<td>teazzers.testcases.contacts.TEAZ58Contacts_SearchbyEmail@f759d7</td></tr>
+<tr>
+<td title='teazzers.testcases.contacts.TEAZ54Contacts_SearchbyFirstName.searchFirstName()'><b>searchFirstName</b><br>Test class: teazzers.testcases.contacts.TEAZ54Contacts_SearchbyFirstName<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Chris</td>
+<td></td>
+<td>28</td>
+<td>teazzers.testcases.contacts.TEAZ54Contacts_SearchbyFirstName@1881071</td></tr>
+<tr>
+<td title='teazzers.testcases.brokers.TEAZ43Brokers_SearchbyFrequency.searchFrequency()'><b>searchFrequency</b><br>Test class: teazzers.testcases.brokers.TEAZ43Brokers_SearchbyFrequency<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Waikiki, Monthly</td>
+<td></td>
+<td>49</td>
+<td>teazzers.testcases.brokers.TEAZ43Brokers_SearchbyFrequency@1fe1d71</td></tr>
+<tr>
+<td title='teazzers.testcases.contacts.TEAZ55Contacts_SearchbyLastName.searchLastName()'><b>searchLastName</b><br>Test class: teazzers.testcases.contacts.TEAZ55Contacts_SearchbyLastName<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Koritz</td>
+<td></td>
+<td>45</td>
+<td>teazzers.testcases.contacts.TEAZ55Contacts_SearchbyLastName@17dd107</td></tr>
+<tr>
+<td title='teazzers.testcases.suppliers.TEAZ48Suppliers_SearchbyName.searchName()'><b>searchName</b><br>Test class: teazzers.testcases.suppliers.TEAZ48Suppliers_SearchbyName<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Billie Jean</td>
+<td></td>
+<td>48</td>
+<td>teazzers.testcases.suppliers.TEAZ48Suppliers_SearchbyName@ac3dc3</td></tr>
+<tr>
+<td title='teazzers.testcases.distributors.TEAZ33Distributors_SearchbyName.searchName()'><b>searchName</b><br>Test class: teazzers.testcases.distributors.TEAZ33Distributors_SearchbyName<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Itaewon Store, Danbam, 876-123-5463</td>
+<td></td>
+<td>51</td>
+<td>teazzers.testcases.distributors.TEAZ33Distributors_SearchbyName@1738a82</td></tr>
+<tr>
+<td title='teazzers.testcases.brokers.TEAZ41Brokers_SearchbyName.searchName()'><b>searchName</b><br>Test class: teazzers.testcases.brokers.TEAZ41Brokers_SearchbyName<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Bullet Heart, 768-876-1213</td>
+<td></td>
+<td>54</td>
+<td>teazzers.testcases.brokers.TEAZ41Brokers_SearchbyName@eeefeb</td></tr>
+<tr>
+<td title='teazzers.testcases.parentcompanies.TEAZ02ParentCompany_SearchbyName.searchName()'><b>searchName</b><br>Test class: teazzers.testcases.parentcompanies.TEAZ02ParentCompany_SearchbyName<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Itaewon Store, Danbam, 876-123-5463</td>
+<td></td>
+<td>54</td>
+<td>teazzers.testcases.parentcompanies.TEAZ02ParentCompany_SearchbyName@ac1102</td></tr>
+<tr>
+<td title='teazzers.testcases.distributors.TEAZ36Distributors_SearchbyParentName.searchParentName()'><b>searchParentName</b><br>Test class: teazzers.testcases.distributors.TEAZ36Distributors_SearchbyParentName<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Itaewon stores, Danbam, DOT Foods</td>
+<td></td>
+<td>80</td>
+<td>teazzers.testcases.distributors.TEAZ36Distributors_SearchbyParentName@eca56e</td></tr>
+<tr>
+<td title='teazzers.testcases.locations.TEAZ17Location_SearchbyParentName.searchParentName()'><b>searchParentName</b><br>Test class: teazzers.testcases.locations.TEAZ17Location_SearchbyParentName<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, QuikTrip Corporation</td>
+<td></td>
+<td>37</td>
+<td>teazzers.testcases.locations.TEAZ17Location_SearchbyParentName@eebfca</td></tr>
+<tr>
+<td title='teazzers.testcases.service_technicians.TEAZ25ServTech_SearchbyParentName.searchParentName()'><b>searchParentName</b><br>Test class: teazzers.testcases.service_technicians.TEAZ25ServTech_SearchbyParentName<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Itaewon stores, Danbam, WR Keyser Limited</td>
+<td></td>
+<td>56</td>
+<td>teazzers.testcases.service_technicians.TEAZ25ServTech_SearchbyParentName@1371b2d</td></tr>
+<tr>
+<td title='teazzers.testcases.service_technicians.TEAZ27ServTech_SearchbyPhoneNum.searchPhoneNum()'><b>searchPhoneNum</b><br>Test class: teazzers.testcases.service_technicians.TEAZ27ServTech_SearchbyPhoneNum<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Never Ever, Hard Carry, 888-999-1111</td>
+<td></td>
+<td>56</td>
+<td>teazzers.testcases.service_technicians.TEAZ27ServTech_SearchbyPhoneNum@1c8530f</td></tr>
+<tr>
+<td title='teazzers.testcases.parentcompanies.TEAZ07ParentCompany_SearchbyPhoneNum.searchPhoneNum()'><b>searchPhoneNum</b><br>Test class: teazzers.testcases.parentcompanies.TEAZ07ParentCompany_SearchbyPhoneNum<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Never Ever, Hard Carry, 888-999-1111</td>
+<td></td>
+<td>53</td>
+<td>teazzers.testcases.parentcompanies.TEAZ07ParentCompany_SearchbyPhoneNum@70a3d8</td></tr>
+<tr>
+<td title='teazzers.testcases.contacts.TEAZ59Contacts_SearchbyPhoneNum.searchPhoneNum()'><b>searchPhoneNum</b><br>Test class: teazzers.testcases.contacts.TEAZ59Contacts_SearchbyPhoneNum<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, 800-392-4869</td>
+<td></td>
+<td>33</td>
+<td>teazzers.testcases.contacts.TEAZ59Contacts_SearchbyPhoneNum@1d0685f</td></tr>
+<tr>
+<td title='teazzers.testcases.locations.TEAZ21Location_SearchbyPhoneNum.searchPhoneNum()'><b>searchPhoneNum</b><br>Test class: teazzers.testcases.locations.TEAZ21Location_SearchbyPhoneNum<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, 222-222-2222</td>
+<td></td>
+<td>41</td>
+<td>teazzers.testcases.locations.TEAZ21Location_SearchbyPhoneNum@2663d3</td></tr>
+<tr>
+<td title='teazzers.testcases.locations.TEAZ22Location_SearchbyPrimaryDisturbutor.searchPrimaryDisturbutor()'><b>searchPrimaryDisturbutor</b><br>Test class: teazzers.testcases.locations.TEAZ22Location_SearchbyPrimaryDisturbutor<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Brewmaster</td>
+<td></td>
+<td>38</td>
+<td>teazzers.testcases.locations.TEAZ22Location_SearchbyPrimaryDisturbutor@1e8284b</td></tr>
+<tr>
+<td title='teazzers.testcases.locations.TEAZ18Location_SearchbyServiceTechnician.searchServiceTechnician()'><b>searchServiceTechnician</b><br>Test class: teazzers.testcases.locations.TEAZ18Location_SearchbyServiceTechnician<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Indiana Technical Services</td>
+<td></td>
+<td>46</td>
+<td>teazzers.testcases.locations.TEAZ18Location_SearchbyServiceTechnician@3c468</td></tr>
+<tr>
+<td title='teazzers.testcases.locations.TEAZ20Location_SearchbyStateName.searchStateName()'><b>searchStateName</b><br>Test class: teazzers.testcases.locations.TEAZ20Location_SearchbyStateName<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, SC</td>
+<td></td>
+<td>36</td>
+<td>teazzers.testcases.locations.TEAZ20Location_SearchbyStateName@1b7a79b</td></tr>
+<tr>
+<td title='teazzers.testcases.parentcompanies.TEAZ06ParentCompany_SearchbyStateName.searchStateName()'><b>searchStateName</b><br>Test class: teazzers.testcases.parentcompanies.TEAZ06ParentCompany_SearchbyStateName<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, IGOT7, Team Wang, Physical Address, 54 Fairway Street, PLANT CITY, FL, 32137</td>
+<td></td>
+<td>78</td>
+<td>teazzers.testcases.parentcompanies.TEAZ06ParentCompany_SearchbyStateName@13a3d88</td></tr>
+<tr>
+<td title='teazzers.testcases.service_technicians.TEAZ24ServTech_SearchbyTradeName.searchTradeName()'><b>searchTradeName</b><br>Test class: teazzers.testcases.service_technicians.TEAZ24ServTech_SearchbyTradeName<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Swear by the Moon, DefSoul, 768-987-8878</td>
+<td></td>
+<td>68</td>
+<td>teazzers.testcases.service_technicians.TEAZ24ServTech_SearchbyTradeName@1374a5e</td></tr>
+<tr>
+<td title='teazzers.testcases.parentcompanies.TEAZ04ParentCompany_SearchbyTradeName.searchTradeName()'><b>searchTradeName</b><br>Test class: teazzers.testcases.parentcompanies.TEAZ04ParentCompany_SearchbyTradeName<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Swear by the Moon, DefSoul, 768-987-8878</td>
+<td></td>
+<td>42</td>
+<td>teazzers.testcases.parentcompanies.TEAZ04ParentCompany_SearchbyTradeName@1c2b765</td></tr>
+<tr>
+<td title='teazzers.testcases.distributors.TEAZ35Distributors_SearchbyTradeName.searchTradeName()'><b>searchTradeName</b><br>Test class: teazzers.testcases.distributors.TEAZ35Distributors_SearchbyTradeName<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Swear by the Moon, DefSoul, 768-987-8878</td>
+<td></td>
+<td>55</td>
+<td>teazzers.testcases.distributors.TEAZ35Distributors_SearchbyTradeName@1b64261</td></tr>
+<tr>
+<td title='teazzers.testcases.locations.TEAZ16Location_SearchbyTradeName.searchTradeName()'><b>searchTradeName</b><br>Test class: teazzers.testcases.locations.TEAZ16Location_SearchbyTradeName<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Fortune</td>
+<td></td>
+<td>37</td>
+<td>teazzers.testcases.locations.TEAZ16Location_SearchbyTradeName@124411f</td></tr>
+<tr>
+<td title='teazzers.testcases.distributors.TEAZ34Distributors_SearchbyVendorNum.searchVendorNum()'><b>searchVendorNum</b><br>Test class: teazzers.testcases.distributors.TEAZ34Distributors_SearchbyVendorNum<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd, Sherlock, Shinee</td>
+<td></td>
+<td>59</td>
+<td>teazzers.testcases.distributors.TEAZ34Distributors_SearchbyVendorNum@485a47</td></tr>
+<tr>
+<td title='teazzers.testcases.distributors.TEAZ32Distributors_VerifyGrid.verifyGrid()'><b>verifyGrid</b><br>Test class: teazzers.testcases.distributors.TEAZ32Distributors_VerifyGrid<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd</td>
+<td></td>
+<td>34</td>
+<td>teazzers.testcases.distributors.TEAZ32Distributors_VerifyGrid@b0ed20</td></tr>
+<tr>
+<td title='teazzers.testcases.contacts.TEAZ53Contacts_VerifyGrid.verifyGrid()'><b>verifyGrid</b><br>Test class: teazzers.testcases.contacts.TEAZ53Contacts_VerifyGrid<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd</td>
+<td></td>
+<td>32</td>
+<td>teazzers.testcases.contacts.TEAZ53Contacts_VerifyGrid@1eb8acf</td></tr>
+<tr>
+<td title='teazzers.testcases.locations.TEAZ13Location_VerifyGrid.verifyGrid()'><b>verifyGrid</b><br>Test class: teazzers.testcases.locations.TEAZ13Location_VerifyGrid<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd</td>
+<td></td>
+<td>38</td>
+<td>teazzers.testcases.locations.TEAZ13Location_VerifyGrid@16e2f39</td></tr>
+<tr>
+<td title='teazzers.testcases.suppliers.TEAZ47Suppliers_VerifyGrid.verifyGrid()'><b>verifyGrid</b><br>Test class: teazzers.testcases.suppliers.TEAZ47Suppliers_VerifyGrid<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd</td>
+<td></td>
+<td>36</td>
+<td>teazzers.testcases.suppliers.TEAZ47Suppliers_VerifyGrid@bf3d14</td></tr>
+<tr>
+<td title='teazzers.testcases.brokers.TEAZ40Brokers_VerifyGrid.verifyGrid()'><b>verifyGrid</b><br>Test class: teazzers.testcases.brokers.TEAZ40Brokers_VerifyGrid<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd</td>
+<td></td>
+<td>38</td>
+<td>teazzers.testcases.brokers.TEAZ40Brokers_VerifyGrid@150c158</td></tr>
+<tr>
+<td title='teazzers.testcases.parentcompanies.TEAZ01ParentCompany_VerifyGrid.verifyGrid()'><b>verifyGrid</b><br>Test class: teazzers.testcases.parentcompanies.TEAZ01ParentCompany_VerifyGrid<br>Parameters: https://teazzersqa.azurewebsites.net/, TeazzersAdmin@teazzers.com, DEV9@$$w0Rd</td>
+<td></td>
+<td>35</td>
+<td>teazzers.testcases.parentcompanies.TEAZ01ParentCompany_VerifyGrid@186f9d5</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="teazzers.testcases.service_technicians.TEAZ26ServTech_SearchbyCityName">
+        <methods>
+          <include name="searchCityName" invocation-numbers="0"/>
+          <include name="report"/>
+          <include name="startReport"/>
+          <include name="stopReport"/>
+          <include name="loadObj"/>
+          <include name="beforeMethod"/>
+          <include name="unloadObj"/>
+          <include name="setecelfile"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- teazzers.testcases.service_technicians.TEAZ26ServTech_SearchbyCityName -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
